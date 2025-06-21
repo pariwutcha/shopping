@@ -6,6 +6,7 @@ import { useCart } from "../../context/CartContext";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Papa from "papaparse";
+export const runtime = 'edge';
 
 export default function ProductPage({ params }) {
   const unwrappedParams = use(params); // unwrap the Promise
